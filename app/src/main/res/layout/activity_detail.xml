@@ -108,16 +108,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@color/white"
+            android:background="?attr/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_amount_following"
             app:tabGravity="fill"
-            app:tabIndicatorColor="@color/violet"
+            app:tabIndicatorColor="@color/white"
             app:tabMaxWidth="0dp"
             app:tabMode="fixed"
-            app:tabTextColor="@color/violet" />
+            app:tabTextColor="@android:color/white" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
