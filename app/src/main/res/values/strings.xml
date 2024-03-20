@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GithubAPI</string>
+    <string name="users_name">Nama User</string>
+    <string name="searchbar_hint">Cari User</string>
+    <string name="error_message">User Tidak Ditemukan !</string>
+    <string name="usernameTv">Username</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="amount_followers">123</string>
+    <string name="amount_following">123</string>
+    <string name="tab_1">Followers</string>
+    <string name="tab_2">Following</string>
+    <string name="icon_favorite">icon_Favorite</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="title_settings">Pengaturan</string>
+</resources>

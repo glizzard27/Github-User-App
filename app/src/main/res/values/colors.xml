@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="violet">#6750A4</color>
+
+    <!--    Dark Mode Theme   -->
+    <color name="dark_primary">#BB86FC</color>
+    <color name="dark_background">#121212</color>
+</resources>
