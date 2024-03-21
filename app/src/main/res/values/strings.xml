@@ -10,8 +10,9 @@
     <string name="amount_following">123</string>
     <string name="tab_1">Followers</string>
     <string name="tab_2">Following</string>
-    <string name="icon_favorite">icon_Favorite</string>
-    <string name="dark_mode">Dark Mode</string>
+    <string name="icon_favorite">Icon_Favorite</string>
+    <string name="icon_share">Icon_Share</string>
+    <string name="dark_mode">Change Theme Mode</string>
     <string name="title_favorite">Favorit</string>
     <string name="title_settings">Pengaturan</string>
 </resources>

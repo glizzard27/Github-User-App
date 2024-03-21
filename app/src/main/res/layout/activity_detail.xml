@@ -134,6 +134,19 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/icon_share"
+        app:fabSize="normal"
+        app:layout_anchor="@id/scrollViewDetailUser"
+        app:layout_anchorGravity="bottom|start"
+        app:srcCompat="@drawable/baseline_share_24"
+        />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add_favorite"
         android:layout_width="wrap_content"
