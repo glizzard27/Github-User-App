@@ -61,13 +61,7 @@ class DetailUserFragment : Fragment() {
         }
     }
 
-    private fun showLoading(isLoading: Boolean){
-        binding.apply{
-            if (isLoading){
-                progressBarFollow.visibility= View.VISIBLE
-            } else {
-                progressBarFollow.visibility= View.GONE
-            }
-        }
+    private fun showLoading(state: Boolean) {
+        binding.progressBarFollowersFollowing.visibility = if (state) View.VISIBLE else View.GONE
     }
 }
