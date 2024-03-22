@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -10,6 +12,9 @@ android {
     compileSdk = 34
 
     defaultConfig {
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+
         applicationId = "com.fajarbaihaqi.githubapi"
         minSdk = 24
         targetSdk = 34
@@ -18,7 +23,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "BASE_URL", "\"https://api.github.com\"")
-        buildConfigField ("String", "API_KEY", "\"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\"")
+        buildConfigField ("String", "API_KEY", properties.getProperty("API_KEY"))
     }
 
     buildTypes {
