@@ -1,6 +1,7 @@
 package com.fajarbaihaqi.githubapi.ui.detail
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
@@ -39,6 +40,7 @@ class DetailActivity : AppCompatActivity() {
 
         val username = intent.getStringExtra("USERNAME")
         val avatar = intent.getStringExtra("AVATAR")
+        val url = intent.getStringExtra("URL")
 
         if(username != null){
             val sectionPagerAdapter = SectionPagerAdapter(this,username)
@@ -116,6 +118,16 @@ class DetailActivity : AppCompatActivity() {
                     detailUserViewModel.insertFavorite(userFavorite)
                     fabAddFavorite.contentDescription = "true"
                 }
+            }
+            fabShareBtn.setOnClickListener{
+                val intent = Intent(Intent.ACTION_SEND)
+                if (url != null){
+                    intent.putExtra(Intent.EXTRA_TEXT, ("Follow On Github : $url"))
+                } else {
+                    intent.putExtra(Intent.EXTRA_TEXT, ("Follow On Github : $username"))
+                }
+                intent.type = "text/plain"
+                startActivity(Intent.createChooser(intent, "Send To"))
             }
         }
     }

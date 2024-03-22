@@ -18,6 +18,7 @@ class DetailUserAdapter: ListAdapter<ItemsItem, DetailUserAdapter.MyViewHolder>(
                 intentDetailUser.putExtra("ID", itemName.id)
                 intentDetailUser.putExtra("USERNAME", itemName.login)
                 intentDetailUser.putExtra("AVATAR", itemName.avatarUrl)
+                intentDetailUser.putExtra("URL", itemName.htmlUrl)
                 binding.root.context.startActivity(intentDetailUser)
             }
         }

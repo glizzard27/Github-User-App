@@ -7,4 +7,8 @@
     <!--    Dark Mode Theme   -->
     <color name="dark_primary">#BB86FC</color>
     <color name="dark_background">#121212</color>
+
+    <color name="primary">#E1AFD1</color>
+    <color name="secondary">#AD88C6</color>
+    <color name="accent">#7469B6</color>
 </resources>
